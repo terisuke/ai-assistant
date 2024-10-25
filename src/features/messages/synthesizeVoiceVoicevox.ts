@@ -1,6 +1,7 @@
 import { Talk } from './messages'
 
-const VOICE_VOX_API_URL = 'http://localhost:50021'
+const VOICE_VOX_API_URL =
+  process.env.NEXT_PUBLIC_VOICE_VOX_API_URL || 'http://localhost:50021'
 
 export async function synthesizeVoiceVoicevoxApi(
   talk: Talk,
